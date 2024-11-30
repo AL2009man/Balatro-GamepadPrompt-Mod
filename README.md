@@ -10,7 +10,7 @@ What if I told you there are additional button prompts leftover from the PC Vers
 
 ![image](https://github.com/user-attachments/assets/97c0b00c-b1cb-4460-8c5a-645e028cdcab)
 
-This is a strange omission, given they're using SDL and [SDL GameController Database](https://github.com/mdqinc/SDL_GameControllerDB) to do the heavy-lifting-- you would expect them to use `SDL_GameControllerGetButton`, but nope: it'll always shows Xbox button prompts.
+This is a strange omission, given they're using SDL and [SDL GameController Database](https://github.com/mdqinc/SDL_GameControllerDB) to do the heavy-lifting-- you would expect them to use `SDL_GameControllerGetType` or something, but nope: it'll always shows Xbox button prompts.
 
 But given how surprisingly moddable Balatro is: I decided to create a simple mod that replaces Xbox button prompts with DualShock 4, DualSense, Nintendo Switch Pro Controller and Steam Deck. All button image assets are taken straight from the source files, and then modified. in Steam Deck's case: it's combined with PlayStation and Nintendo prompts.
 
