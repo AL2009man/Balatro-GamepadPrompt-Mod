@@ -1,6 +1,6 @@
 # Balatro-GamepadPrompt-Mod
 
-test
+Unfinished mod. please comee back later....however: [you could try out the mod right away](https://github.com/AL2009man/Balatro-GamepadPrompt-Mod/releases/latest/download/) 
 
 # Installation
 
