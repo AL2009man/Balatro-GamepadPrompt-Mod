@@ -2,8 +2,8 @@
 --- MOD_NAME: Gamepad Prompts - Nintendo Switch
 --- MOD_ID: GamepadPrompts-Nintendo
 --- MOD_AUTHOR: [AL2009man]
---- MOD_DESCRIPTION: This is a simple mod that replaces Xbox One button prompt textures infavor of Nintendo Switch prompts. <br>This version will be based on the Positional Face button Layout.
---- BADGE_COLOUR: "D92F20"
+--- MOD_DESCRIPTION: This is a simple mod that replaces Xbox One button prompt textures infavor of Nintendo Switch prompts. This version will be based on the Positional Face button Layout.
+--- BADGE_COLOUR: D92F20
 --- DEPENDENCIES: [Steamodded>=0.9.8]
 --- VERSION: 0.1.2
 

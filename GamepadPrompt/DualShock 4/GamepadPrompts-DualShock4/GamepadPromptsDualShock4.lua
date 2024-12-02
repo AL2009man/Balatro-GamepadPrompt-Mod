@@ -3,7 +3,7 @@
 --- MOD_ID: GamepadPrompts-DualShock4
 --- MOD_AUTHOR: [AL2009man]
 --- MOD_DESCRIPTION: This is a simple mod that replaces Xbox One button prompt textures infavor of DualShock 4 prompts.
---- BADGE_COLOUR: "234C9B"
+--- BADGE_COLOUR: 234C9B
 --- DEPENDENCIES: [Steamodded>=0.9.8]
 --- VERSION: 0.1.2
 
