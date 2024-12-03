@@ -24,7 +24,7 @@ But given how surprisingly moddable Balatro is: I decided to create a simple mod
 I highly suggest copying the Balatro.exe file as a backup in case it doesn't work. Also, if a game update comes out, **the modded prompts will be overridden**. if you wanna apply the same mod again: you'll have to redo the entire step.
 
 ## Method 1: Steammoded
-1. Download [Streammodded](https://github.com/Steamopollys/Steamodded) (Balatro Mod-loader) and read the [Installation booklet](https://github.com/Steamopollys/Steamodded/wiki/01.-Getting-started).
+1. Download [Streammodded version 1.0+](https://github.com/Steamopollys/Steamodded) (Balatro Mod-loader) and read the [Installation booklet](https://github.com/Steamopollys/Steamodded/wiki/01.-Getting-started).
 2. after that: download this Modpack, open the button prompt folder, and pick one of the Button Prompt folders.
    * There will be variants of the same Button Icons within the same Button Prompt file (for example: the Nintendo Switch prompts folder will include the Nintendo Layout version), just pick one of the variants and proceed
 3. Drag and drop `GamepadPrompts-[Insert Controller Type name here]` file into `/Mods` folder.
