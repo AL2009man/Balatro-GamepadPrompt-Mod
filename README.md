@@ -5,7 +5,7 @@ Download: [GitHub](https://github.com/AL2009man/Balatro-GamepadPrompt-Mod/releas
 ----
 
 
-Finally got the chance to try out Balatro, and after playtesting its Controller Support: I can  I can confirm it relies on SDL2 to handle general controller support, but it only shows Xbox prompts.
+Finally got the chance to try out Balatro, and after playtesting its Controller Support: I can confirm it relies on SDL2 to handle general controller support, but it only shows Xbox prompts.
 
 What if I told you there are additional button prompts leftover from the PC Version? Unfortunately, it's true, and you can find them within the source code files. 
 
