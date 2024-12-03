@@ -1,8 +1,9 @@
 # Balatro-GamepadPrompt-Mod
 
-Unfinished mod. please come back later....however: [you could try out the mod right away](https://github.com/AL2009man/Balatro-GamepadPrompt-Mod/releases) 
+Download: [GitHub](https://github.com/AL2009man/Balatro-GamepadPrompt-Mod/releases/latest/download/BalatroGamePadPrompts-Mod.zip)
 
 ----
+
 
 Finally got the chance to try out Balatro, and after playtesting its Controller Support: I can  I can confirm it relies on SDL2 to handle general controller support, but it only shows Xbox prompts.
 
