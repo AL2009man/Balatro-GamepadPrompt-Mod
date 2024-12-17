@@ -5,7 +5,7 @@
 --- MOD_DESCRIPTION: This is a simple mod that replaces Xbox One button prompt textures infavor of Steam Deck prompts.
 --- BADGE_COLOUR: 6285EF
 --- DEPENDENCIES: [Steamodded>=1.0.0~ALPHA-0812d]
---- VERSION: 1.0.0
+--- VERSION: 1.0.1
 
 ----------------------------------------------
 ------------MOD CODE -------------------------
