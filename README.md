@@ -2,7 +2,7 @@
 
 Download: 
 [GitHub](https://github.com/AL2009man/Balatro-GamepadPrompt-Mod/releases/latest/download/BalatroGamePadPrompts-Mod.zip)
-[NexusMods](https://www.nexusmods.com/balatro/mods/73/)
+- [NexusMods](https://www.nexusmods.com/balatro/mods/73/)
 
 ----
 
