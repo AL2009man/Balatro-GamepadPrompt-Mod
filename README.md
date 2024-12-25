@@ -27,7 +27,7 @@ But given how surprisingly moddable Balatro is: I decided to create a simple mod
 I highly suggest copying the Balatro.exe file as a backup in case it doesn't work. Also, if a game update comes out, **the modded prompts will be overridden**. if you wanna apply the same mod again: you'll have to redo the entire step.
 
 ## Method 1: Steammoded
-1. download any File Archivers app/programs that supports **[Zstandard/ZSTD](https://facebook.github.io/zstd/)**, the latest version of [**7-Zip](https://www.7-zip.org/)** or **[NanaZip](https://github.com/M2Team/NanaZip)** is highly recommended. 
+1. download any File Archivers app/programs that supports **[Zstandard/ZSTD](https://facebook.github.io/zstd/)**, the latest version of **[7-Zip](https://www.7-zip.org/)** or **[NanaZip](https://github.com/M2Team/NanaZip)** is highly recommended. 
    * If you're on a Linux distro (or you're on SteamOS): you can skip this step. Your File Archive app/program should support it.
 2. Download [Streammodded version 1.0+](https://github.com/Steamopollys/Steamodded) (Balatro Mod-loader) and read the [Installation booklet](https://github.com/Steamopollys/Steamodded/wiki/01.-Getting-started).
 3. after that: download this Modpack, open the button prompt folder, and pick one of the Button Prompt folders.
