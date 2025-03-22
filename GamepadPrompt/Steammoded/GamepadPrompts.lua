@@ -6,19 +6,6 @@
 --- BADGE_COLOUR: 234C9B
 --- DEPENDENCIES: [Steamodded>=1.0.0~ALPHA-0812d]
 --- VERSION: 1.1.0
-
-----------------------------------------------
-------------MOD CODE -------------------------
-
---- STEAMODDED HEADER
---- MOD_NAME: Gamepad Prompts
---- MOD_ID: GamepadPrompts
---- MOD_AUTHOR: [AL2009man]
---- MOD_DESCRIPTION: Dynamically replaces baked-in Xbox prompts with an automated detection system.
---- BADGE_COLOUR: 6285EF
---- DEPENDENCIES: [Steammodded>=1.0.0~ALPHA-0812d]
---- VERSION: 1.0.1
-
 ----------------------------------------------
 ------------MOD CODE -------------------------
 
