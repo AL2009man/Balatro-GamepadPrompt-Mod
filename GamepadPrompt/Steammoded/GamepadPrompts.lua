@@ -6,6 +6,7 @@
 --- BADGE_COLOUR: 234C9B
 --- DEPENDENCIES: [Steamodded>=1.0.0~ALPHA-0812d]
 --- VERSION: 1.1.0
+
 ----------------------------------------------
 ------------MOD CODE -------------------------
 
@@ -16,7 +17,9 @@ GamepadPrompts = SMODS.current_mod
 
 -- Load Configurations from config.lua
 local config_path = "Mods/GamepadPrompts/config.lua"
-GamepadPrompts.config = dofile(config_path) or {options = {"Xbox", "DualSense", "DualShock4", "NintendoSwitch", "SteamDeck"}}
+GamepadPrompts.config = dofile(config_path) or {
+    options = {"Xbox", "DualSense", "DualShock4", "NintendoSwitch", "SteamDeck"}
+}
 
 -- Default Texture and Controller
 local default_texture = "gamepad_ui.png"
@@ -42,7 +45,7 @@ function update_controller_texture(controller_type)
             path = texture_path,
             px = 32,
             py = 32,
-            prefix_config = { key = false }
+            prefix_config = {key = false}
         }
         sendDebugMessage("Controller texture loaded: " .. texture_path)
     else
@@ -63,52 +66,64 @@ end
 
 -- Config Tab Definition
 GamepadPrompts.config_tab = function()
-    local controller_options = GamepadPrompts.config.options
-    return {
-        n = G.UIT.ROOT,
-        config = {r = 0.1, minw = 10, align = "cm", padding = 0.1, colour = G.C.BLACK},
-        nodes = create_tabs({
-            tabs = {
-                {
-                    label = localize("tabs_controller_selection"),
-                    chosen = true,
-                    tab_definition_function = function()
+    local tabs = create_tabs({
+        tabs = {
+            {
+                label = localize("tabs_controller_selection"),
+                chosen = true,
+                tab_definition_function = function()
+                    -- Create Slider Node
+                    local controller_slider_node = {
+                        n = G.UIT.SLIDER,
+                        config = {
+                            text = "Controller Icons",
+                            options = GamepadPrompts.config.options,
+                            align = "cm",
+                            scale = 1,
+                            arrow_left = true,
+                            arrow_right = true
+                        },
+                        callback = function(option_index)
+                            local selected_controller = GamepadPrompts.config.options[option_index]
+                            GamepadPrompts.config.controller_type = selected_controller
+                            sendDebugMessage("Controller selected: " .. selected_controller)
+                            update_controller_texture(selected_controller)
+                        end
+                    }
+
+                    -- Validate Slider Node
+                    if type(controller_slider_node) ~= "table" or not controller_slider_node.n then
+                        sendDebugMessage("Error: Invalid slider node.")
                         return {
                             n = G.UIT.ROOT,
-                            config = {align = "tm", r = 0.1, padding = 0.3, outline = 1, colour = G.C.BLACK, minh = 8, maxw = 16},
-                            nodes = {
-                                create_toggle({
-                                    label = localize("controller_type"),
-                                    ref_table = GamepadPrompts.config,
-                                    ref_value = "controller_type",
-                                    callback = function()
-                                        update_controller_texture(GamepadPrompts.config.controller_type)
-                                    end
-                                })
-                            }
+                            config = {text = "Error in slider node.", colour = G.C.RED},
+                            nodes = {}
                         }
                     end
-                },
-                {
-                    label = localize("tabs_help"),
-                    tab_definition_function = function()
-                        return {
-                            n = G.UIT.ROOT,
-                            config = {align = "tm", r = 0.1, padding = 0.3, outline = 1, colour = G.C.BLACK, minh = 8, maxw = 16},
-                            nodes = {
-                                {n = G.UIT.T, config = {text = "Select a controller type to dynamically update textures. The changes will apply automatically.", scale = 0.4, colour = G.C.UI.TEXT_LIGHT}}
-                            }
-                        }
-                    end
-                }
+
+                    -- Return UI Definition
+                    return {
+                        n = G.UIT.ROOT,
+                        config = {align = "tm", r = 0.1, padding = 0.3},
+                        nodes = {controller_slider_node}
+                    }
+                end
             }
-        })
-    }
+        }
+    })
+
+    -- Debug Tabs
+    if type(tabs) ~= "table" then
+        sendDebugMessage("Error: Tabs structure is invalid.")
+    end
+
+    return tabs
 end
 
 -- Initialize the Mod
 update_controller_texture(GamepadPrompts.current_controller)
 sendDebugMessage("Gamepad Prompts Mod Initialized Successfully!")
+
 
 ----------------------------------------------
 ------------MOD CODE END----------------------
