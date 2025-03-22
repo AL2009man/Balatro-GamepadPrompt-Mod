@@ -1,8 +1,8 @@
 --- STEAMODDED HEADER
---- MOD_NAME: Gamepad Prompts - DualSense
---- MOD_ID: GamepadPrompts-DualSense
+--- MOD_NAME: Gamepad Prompts
+--- MOD_ID: GamepadPrompts
 --- MOD_AUTHOR: [AL2009man]
---- MOD_DESCRIPTION: This is a simple mod that replaces Xbox One button prompt textures infavor of DualSense prompts.
+--- MOD_DESCRIPTION: This is a simple mod that replaces the bake-in Xbox prompts with a more Automated Detection system.
 --- BADGE_COLOUR: 6C6D70
 --- DEPENDENCIES: [Steamodded>=1.0.0~ALPHA-0812d]
 --- VERSION: 1.0.1
